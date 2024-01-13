@@ -5,7 +5,7 @@ import java.util.TreeMap;
 import java.util.List;
 import java.util.ArrayList;
 
-// Car class with carMap, addCar, carByName, carByCount, and totalCarsSold methods
+// Car class with carMap, addCar, carByName, carByCount, and totalCarsSold method
 class Car {
     private Map<String, Integer> carMap;
 

@@ -1,0 +1,117 @@
+Fresh Farm is one of the best producers of fresh farm products in the city. Their products include dairy products, vegetables, and fruits. They want an estimate of the maximum product which is sold from the farm each day. Develop a java application for the same using Streams.
+
+Component Specification: Carton (POJO Class)
+
+Type (Class)
+
+Attributes
+
+Methods
+
+Carton
+
+String productName
+
+int quantity
+
+double productCost
+
+Getters and Setters are given in the code skeleton.
+
+
+
+Component Specification: CartonUtility
+
+Type (Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+CartonUtility
+
+List<Carton> cartonList
+
+
+
+Provide the setter and getter for the class attribute.
+
+CartonUtility
+
+
+
+public Stream<Carton> convertToStream()
+
+Convert the list of Carton objects to the stream of Carton and return it.
+
+CartonUtility
+
+
+
+public Carton findMax(Stream<Carton> stream1)
+
+Find the maximum quantity of product sold for that day and return that object.
+
+Note: The class and methods should be declared as public and all the attributes should be declared as private.
+
+Note:
+
+
+-      The number of cartons should be a valid natural number, if fails print as "Invalid".
+
+-      The number of quantities should be a valid natural number, if fails print as "Quantity number should be a valid number".
+
+-       Input records are entered in the format: productName/ quantity/ productCost.
+
+
+-       In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user, and the rest of the text represents the output.
+
+-       Ensure to follow the object-oriented specifications provided in the question description.
+
+-       Ensure to provide the names for classes, attributes, and methods as specified in the question description.
+
+-       Adhere to the code template, if provided.
+
+
+
+Sample Input/Output 1:
+
+Enter the number of cartons
+
+3
+
+Enter carton details
+
+egg/40/300
+
+brinjal/50/600
+
+turnip/60/900
+
+turnip had the highest quantity with 60 nos
+
+
+
+Sample Input/Output 2:
+
+Enter the number of cartons
+
+2
+
+Enter carton details
+
+brinjal/0/0
+
+Quantity number should be a valid number
+
+
+
+Sample Input/Output 3:
+
+Enter the number of cartons
+
+0
+
+Invalid

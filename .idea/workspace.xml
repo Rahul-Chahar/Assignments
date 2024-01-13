@@ -5,16 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa3cbf29-ce3a-4289-ba5d-8952296a7ce1" name="Changes" comment="Done">
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/College_Fee_Abstract/DayScholar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/College_Fee_Abstract/Hosteller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/College_Fee_Abstract/Question" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/College_Fee_Abstract/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/College_Fee_Abstract/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Departmental_Store_Interface/BonusPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Departmental_Store_Interface/CustomerDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Departmental_Store_Interface/DoorDelivery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Departmental_Store_Interface/Question" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Departmental_Store_Interface/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Car_Survey_TreeMap/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Car_Survey_TreeMap/Question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Car_Survey_TreeMap/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Countries_And_Capitals_HashMap/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Countries_And_Capitals_HashMap/Question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Countries_And_Capitals_HashMap/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fresh_Farm_Streams/Carton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fresh_Farm_Streams/CartonUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fresh_Farm_Streams/Question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fresh_Farm_Streams/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fruit_Basket_Estimation_Streams/FruitBasket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fruit_Basket_Estimation_Streams/FruitBasketUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fruit_Basket_Estimation_Streams/Question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Fruit_Basket_Estimation_Streams/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Quick_Compute_TreeSet/NumAvg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Quick_Compute_TreeSet/Question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Quick_Compute_TreeSet/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/School_Team_HashSet/ClassHouseFormation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/School_Team_HashSet/Question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/School_Team_HashSet/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Shopping_Cart_ArrayList/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Shopping_Cart_ArrayList/Question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_Generics_and_Stream_API/Shopping_Cart_ArrayList/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Array_Manipulation_Use_try_with_multi_catch/Question" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Array_Manipulation_Use_try_with_multi_catch/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Campus_Radio_Frequency_User_deifind_exception/Question" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Campus_Radio_Frequency_User_deifind_exception/StationNotAvailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Campus_Radio_Frequency_User_deifind_exception/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Campus_Radio_Frequency_User_deifind_exception/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Finding_Pet_Name_Try_with_Resources/Question" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Finding_Pet_Name_Try_with_Resources/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/Finding_Pet_Name_Try_with_Resources/inputfeed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/String_Extraction_Finally/Question" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_Handling/String_Extraction_Finally/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Auditing_Lambda/EmployeeAudit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Auditing_Lambda/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Number_Category_Lambda/NumberCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Number_Category_Lambda/Question" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance_Polymorphism_Abstract_Interface_Lambda/Number_Category_Lambda/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,13 +77,13 @@
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Inheritance_Polymorphism_Abstract_Interface_Lambda.College_Fee_Abstract.UserInterface">
-    <configuration name="Inheritance_Polymorphism_Abstract_Interface_Lambda.College_Fee_Abstract.UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Inheritance_Polymorphism_Abstract_Interface_Lambda.College_Fee_Abstract.UserInterface" />
+  <component name="RunManager" selected="Application.Collections_Generics_and_Stream_API.Fruit_Basket_Estimation_Streams.UserInterface">
+    <configuration name="Collections_Generics_and_Stream_API.Countries_And_Capitals_HashMap.UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections_Generics_and_Stream_API.Countries_And_Capitals_HashMap.UserInterface" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Inheritance_Polymorphism_Abstract_Interface_Lambda.College_Fee_Abstract.*" />
+          <option name="PATTERN" value="Collections_Generics_and_Stream_API.Countries_And_Capitals_HashMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +91,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Inheritance_Polymorphism_Abstract_Interface_Lambda.Departmental_Store_Interface.UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Inheritance_Polymorphism_Abstract_Interface_Lambda.Departmental_Store_Interface.UserInterface" />
+    <configuration name="Collections_Generics_and_Stream_API.Fresh_Farm_Streams.UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections_Generics_and_Stream_API.Fresh_Farm_Streams.UserInterface" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Inheritance_Polymorphism_Abstract_Interface_Lambda.Departmental_Store_Interface.*" />
+          <option name="PATTERN" value="Collections_Generics_and_Stream_API.Fresh_Farm_Streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Collections_Generics_and_Stream_API.Fruit_Basket_Estimation_Streams.UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections_Generics_and_Stream_API.Fruit_Basket_Estimation_Streams.UserInterface" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections_Generics_and_Stream_API.Fruit_Basket_Estimation_Streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Collections_Generics_and_Stream_API.School_Team_HashSet.UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections_Generics_and_Stream_API.School_Team_HashSet.UserInterface" />
+      <module name="Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections_Generics_and_Stream_API.School_Team_HashSet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,11 +131,11 @@
       </method>
     </configuration>
     <configuration name="UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Inheritance_Polymorphism_Abstract_Interface_Lambda.Vivek_Furnitures_Polymorphism.UserInterface" />
+      <option name="MAIN_CLASS_NAME" value="Collections_Generics_and_Stream_API.Car_Survey_TreeMap.UserInterface" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Inheritance_Polymorphism_Abstract_Interface_Lambda.Vivek_Furnitures_Polymorphism.*" />
+          <option name="PATTERN" value="Collections_Generics_and_Stream_API.Car_Survey_TreeMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,9 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Inheritance_Polymorphism_Abstract_Interface_Lambda.College_Fee_Abstract.UserInterface" />
-        <item itemvalue="Application.Inheritance_Polymorphism_Abstract_Interface_Lambda.Departmental_Store_Interface.UserInterface" />
+        <item itemvalue="Application.Collections_Generics_and_Stream_API.Fruit_Basket_Estimation_Streams.UserInterface" />
+        <item itemvalue="Application.Collections_Generics_and_Stream_API.Fresh_Farm_Streams.UserInterface" />
+        <item itemvalue="Application.Collections_Generics_and_Stream_API.School_Team_HashSet.UserInterface" />
         <item itemvalue="Application.UserInterface" />
+        <item itemvalue="Application.Collections_Generics_and_Stream_API.Countries_And_Capitals_HashMap.UserInterface" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705155452988</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Done">
+      <created>1705156619295</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705156619295</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

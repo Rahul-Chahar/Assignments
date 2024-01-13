@@ -1,0 +1,42 @@
+The students of the ECE department at the college have developed a campus radio station and set the frequency range from 91 to 110. Frequency 91.2 MHz is used for music, 93.5 MHz for education, 98.9 MHz for drama, and 109.4 MHz for college events.
+
+ If the audience tunes in to the right frequency signal, then the system should display the message "<input frequency> is the right frequency". If the audience tunes to a frequency other than the one given in the signal, then the system should alert the audience with the message "The frequency <input frequency> is out of range". So, help them automate by writing a Java program that will throw a user defined exception, "StationNotAvailableException".
+
+A partial code is given to do the above task. In the Validator class, you are provided with the method public static boolean validateStation(float freq).
+
+The logic for validating the radio station frequency is partially given. Complete the code as follows If the frequency is within the given list, this method should return true. If the frequency is not in the list, this method should throw a "StationNotAvailableException".
+
+From the main method invoke the validateStation method and handle the exception and print the appropriate message.
+
+Assumption:
+
+Assume the given input is in MHz.
+Note:
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+Ensure to follow the object-oriented specifications provided in the question.
+Ensure to provide the names for classes, attributes, and methods as specified in the question.
+Adhere to the code template, if provided.
+Do not use System.exit(0) to terminate the program.
+
+
+
+
+Sample Input and Output 1:
+
+Scan the radio station
+
+91.2
+
+91.2 is the right frequency
+
+
+
+Sample Input and Output 2:
+
+Scan the radio station
+
+91.6
+
+The frequency 91.6 is out of range
+

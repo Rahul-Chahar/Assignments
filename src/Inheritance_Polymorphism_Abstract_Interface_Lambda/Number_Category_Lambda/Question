@@ -1,0 +1,107 @@
+Hareesh is fascinated with mathematics. He likes to play with numbers. He is crazy about finding different patterns using numbers. He wants to know about numbers like amicable numbers and numbers that create a  palindrome.
+
+ Amicable numbers: 220 and 284 are amicable numbers because divisors of 220 are - 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110 where the sum becomes 284 and the divisors of 284 are - 1, 2, 4, 71 and 142 where the sum becomes 220. Thus they make amicable numbers. But the product of 220 and 284 is 62480 which is not a Palindrome.
+
+ Palindrome numbers: Product of the numbers 122 and 221 produces a Palindrome. But the divisors of 122 are 1,2,61 sum of these numbers does not produce 221 and divisors of 221 are 1,13,17 sum of these numbers does not produce 122 thus they are not amicable numbers.
+
+ Help him to write a java program to find whether the given pair of numbers are amicable numbers and if the product produces a palindrome or not using Lambdas.
+
+ Requirement 1: Check the Number Category
+
+Hareesh wants to identify whether the number is an amicable number and if the product produces a palindrome. By using the method checkNumberCategory, the given numbers are identified whether the numbers are Amicable or if its product  produces a palindrome.
+
+Component Specification: NumberCategory Interface- This is a Functional Interface.
+
+Type(Interface)
+
+Methods
+
+Responsibilities
+
+NumberCategory
+
+public boolean checkNumberCategory(int number1, int number2)
+
+This method is used to check whether the numbers passed as an argument are amicable orif it produces a palindrome product by using Lambda expressions.
+
+
+
+Component Specification: NumberCategoryUtility Class
+
+Component Name
+
+Type(Class)
+
+Methods
+
+Responsibilities
+
+Check Amicability of the given numbers
+
+UserInterface
+
+public static NumberCategory checkAmicable()
+
+This method should return a NumberCategory object. To do this implement the Lambda expression to identify whether the numbers received as a parameter are amicable.
+
+Check whether the given numbers are Palindrome
+
+UserInterface
+
+public static NumberCategory checkPalindrome()
+
+This method should return a NumberCategory object. To do this implement the Lambda expression to identify whether the product of the numbers received as parameter produces a palindrome.
+
+
+
+Don't create an object for the NumberCategory. Use the lambda expression.
+
+In the UserInterface class write the main method and perform the given steps :
+
+-  Get the values for the numbers.
+
+-  Invoke the static methods (checkAmicable(), checkPalindrome()) in the main to perform the calculation.
+
+-  Capture the object of NumberCategory returned by the static method. Using the reference invoke the checkNumberCategory() method.
+
+-  Display the result as shown in the sample output.
+
+Note:
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+
+Ensure to follow the object oriented specifications provided in the question.
+Ensure to provide the names for classes, attributes and methods as specified in the question.
+Adhere to the code template, if provided.
+Do not use System.exit(0) to terminate the program.
+Sample Input 1:
+
+220
+
+284
+
+Sample Output 1:
+
+220 and 284 are amicable numbers
+
+Their Product 62480 does not produce a Palindrome
+
+Explanation: Divisors of 220 are 1+2+4+5+10+11+20+22+44+55+110=284
+
+Divisors of 284 are 1+2+4+71+142=220, thus they make amicable numbers
+
+
+
+Sample Input 2:
+
+221
+
+122
+
+Sample Output 2:
+
+221 and 122 are not amicable numbers
+
+Their Product 26962 do produces a Palindrome
+
+Explanation: Product of 221 and 122 produces 26962, which is a Palindrome.

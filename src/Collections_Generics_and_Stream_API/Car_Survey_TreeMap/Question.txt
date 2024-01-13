@@ -1,0 +1,437 @@
+Cars have become a necessity of life. People's interest in buying cars is growing like never before.
+
+The government is planning to take a survey on cars for the previous year. The survey needs to have various options with which car details can be fetched.
+
+Help the government to implement the above task.
+
+Implement the above scenario using a TreeMap.
+
+Component Specification: Car
+
+Type(Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+Car
+
+Map<String,Integer> carMap
+
+Include the getter and setter method.
+
+
+
+
+Note: The class and methods should be declared as public and all the attributes should be declared as private.
+
+Requirement 1: Add a car name and number of cars sold into the TreeMap.
+
+As per this requirement, the system should be able to add a car name and number of cars sold into the TreeMap.
+
+Component Name
+
+Type(Class)
+
+Methods
+
+Responsibilities
+
+Add a car name and number of cars sold into the TreeMap.
+
+Car
+
+public void addCar(String name,int num)
+
+This method should add a car name and number of cars sold into the TreeMap.
+
+
+Requirement 2: Display the number of cars sold when a car name is given.
+
+As per this requirement, the system should be able to search for a car from the TreeMap and return the number of cars sold.
+
+Component Name
+
+Type(Class)
+
+Methods
+
+Responsibilities
+
+Search a car from the TreeMap.
+
+Car
+
+public int carByName(String name)
+
+This method is used to search for a car from the TreeMap and return the number of cars sold. Else return -1.
+
+
+Requirement 3: Display the car names when a count of cars sold is given.
+
+As per this requirement, the system should be able to search for cars from the TreeMap.
+
+
+Component Name
+
+Type(Class)
+
+Methods
+
+Responsibilities
+
+Search for cars from the TreeMap.
+
+Car
+
+public List<String> carByCount(int count)
+
+This method is used to search for cars sold from the TreeMap that is greater than or equal to the given count and return the same in a list.
+
+
+Requirement 4: Display the total number of cars sold.
+
+As per this requirement, the system should be able to find the total number of cars sold from the TreeMap.
+
+
+Component Name
+
+Type(Class)
+
+Methods
+
+Responsibilities
+
+Calculate the total number of cars sold.
+
+Car
+
+public int totalCarsSold()
+
+This method is used to calculate the total number of cars sold from the TreeMap and return the same.
+
+
+In the UserInterface class,
+
+Create a main method with the menu as described in the sample Input and Output.
+
+When the user selects option 1.Add car, add a car name and the number of cars sold into the carMap.
+
+When the user selects option 2.Search by name, it should display the count of cars sold for a given car name. If the map is empty, it should display "The map is empty". If the car is not available in the Map, it should display "Car not found".
+
+When the user selects option 3.Search by count, it should display the names of cars sold that are greater than or equal to a given count. If the map is empty, it should display "The map is empty". If no such cars are available in the Map, it should display "No cars found".
+
+When the user selects option 4.Total, it should display the total number of cars sold. If the map is empty, it should display "The map is empty".
+
+When the user selects option 5.Exit, display the message "Thank you for using the application" and terminate the program.
+
+Option can take only values 1 to 5.
+
+Note:
+
+Car name is case insensitive.
+
+The value to be given for number of cars sold should be a positive number.
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+
+Ensure to follow the object-oriented specifications provided in the question.
+
+Ensure to provide the names for classes, attributes, and methods as specified in the question.
+
+Adhere to the code template, if provided.
+
+Please don't use System.exit(0) to terminate the program.
+
+
+
+Sample Input / Output 1:
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+1
+
+Enter the car name
+
+Alto
+
+Enter no of cars sold
+
+2500
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+1
+
+Enter the car name
+
+Wagon R
+
+Enter no of cars sold
+
+2000
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+1
+
+Enter the car name
+
+Duster
+
+Enter no of cars sold
+
+700
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+2
+
+Enter the car name
+
+Duster
+
+700
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+3
+
+Enter the count
+
+2300
+
+Alto
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+4
+
+5200
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+5
+
+Thank you for using the application
+
+
+Sample Input / Output 2:
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+1
+
+Enter the car name
+
+Jazz
+
+Enter no of cars sold
+
+350
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+2
+
+Enter the car name
+
+Beat
+
+Car not found
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+3
+
+Enter the count
+
+500
+
+No cars found
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+5
+
+Thank you for using the application
+
+
+Sample Input / Output 3:
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+2
+
+The map is empty
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+3
+
+The map is empty
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+4
+
+The map is empty
+
+1.Add car
+
+2.Search by name
+
+3.Search by count
+
+4.Total
+
+5.Exit
+
+Enter your choice
+
+5
+
+Thank you for using the application
+

@@ -1,0 +1,58 @@
+Jonas gives an assignment to his students. As per the assignment, he gave a sentence and two numbers as the starting and ending index, and the students had to display the letters from the sentence that were present from the given starting index to the ending index. Help them to complete this assignment using a Java program.
+
+Write a public class UserInterface.  Write a method extractString() as
+
+public String extractString(String sentence,int number1, int number2) - This method should print the letters from the sentence which are present in between the starting and ending index
+
+If the numbers are out of range, then it will throw StringIndexOutOfBoundsException.
+
+Whether the assignment is done successfully or not, it should concatenate the String as "Thanks for using the application".
+
+When the assignment is done successfully, it should return a message "The output string is <Letter in between the index>."
+
+If it results in StringIndexOutOfBoundsException, it should return a message, Invalid index position."
+
+Note:
+
+"Use try, catch and finally to perform the above task inside extractString() method". Write the main method and test the above function.
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+Ensure to follow the object-oriented specifications provided in the question.
+Ensure to provide the names for classes, attributes, and methods as specified in the question.
+Adhere to the code template, if provided.
+Do not use System.exit(0) to terminate the program.
+
+
+
+Sample Input/Output 1:
+
+Enter the String
+
+Nothing is impossible
+
+Enter First Index
+
+2
+
+Enter Second Index
+
+12
+
+The output string is thing is i. Thanks for using the application.
+
+
+
+Sample Input/Output 2:
+
+Enter the String
+
+All is well
+
+Enter First Index
+
+-5
+
+Enter Second Index
+
+20
+
+Invalid index position. Thanks for using the application.

@@ -1,0 +1,100 @@
+Alya, a computer science teacher, gives an assignment to her students. She told students to store the numbers in the array and give a position from the array as input. The students have to replicate the number in that position and display all the numbers along with the replicated number. Help them to do this by using the concept of Arrays.
+
+To do this, create a public class UserInterface with a method getDuplicateElement as follows:
+
+public String getDuplicateElement (): This method should do the following.
+
+Get the size of an array as input, and then get the elements of the array (all elements are int) as input. Next, the user should provide the index of the array. This method should return the element at that index as "The array elements are <array element> <replicated element>"
+
+This program may generate an ArrayIndexOutOfBoundsException or InputMismatchException or NegativeArraySizeException.
+
+In the case of an ArrayIndexOutOfBoundsException, the function should return "Array index is out of range".
+
+When providing the input, if the input is not an integer, it will generate an InputMismatchException. In this case, the function should return "Input was not in the correct format".
+
+When providing the input, if the array size is negative, it will generate a NegativeArraySizeException. In this case, the function should return "Array size should be positive".
+
+Use an exception handling mechanism to handle the exception. Use a separate catch block for handling each exception. In the catch block, return the appropriate message.
+
+Write a main method and test the above function.
+
+Note:
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+Ensure to follow the object-oriented specifications provided in the question.
+Ensure to provide the names for classes, attributes, and methods as specified in the question.
+Adhere to the code template, if provided.
+Do not use System.exit(0) to terminate the program.
+
+
+
+Sample Input/Output 1:
+
+Enter the size of an array
+
+4
+
+Enter the array elements
+
+10
+
+20
+
+30
+
+40
+
+Enter the position of the element to be replicated
+
+3
+
+The array elements are 10 20 30 40 40
+
+
+
+Sample Input/Output 2:
+
+Enter the size of an array
+
+3
+
+Enter the array elements
+
+2
+
+27
+
+3
+
+Enter the position of the element to be replicated
+
+4
+
+Array index is out of range
+
+
+
+Sample Input/Output 3:
+
+Enter the size of an array
+
+2
+
+Enter the array elements
+
+2
+
+p
+
+Input was not in the correct format
+
+
+
+Sample Input/Output 4:
+
+Enter the size of an array
+
+
+-1
+
+Array size should be positive

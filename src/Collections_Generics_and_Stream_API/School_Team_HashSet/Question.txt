@@ -1,0 +1,159 @@
+Various competitions are conducted in schools by grouping the students into different houses or teams.
+
+Write a java program to implement the above scenario.
+
+The above scenario should be implemented using a HashSet.
+
+Component Specification: ClassHouseFormation
+
+Type(Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+ClassHouseFormation
+
+HashSet<String> studSet
+
+Include the getter and setter method.
+
+
+
+
+Note: The class and methods should be declared as public and all the attributes should be declared as private.
+
+Requirement 1: Add name to the HashSet.
+
+As per this requirement, the system should be able to add a student name to the HashSet.
+
+Component Name
+
+Type(Class)
+
+Methods
+
+Responsibilities
+
+Add a student name to the HashSet.
+
+ClassHouseFormation
+
+public void addName(String details)
+
+This method should extract the student name from the given input and add only the name to the HashSet.
+
+Eg input: 101:Alan
+
+The name alone should be extracted and added to the HashSet.
+
+(names are case sensitive)
+
+
+Requirement 2: Find the house of student names in the HashSet.
+
+As per this requirement, the system should be able to find the house of the student names present in the HashSet and append the house name to respective stiudent name.
+
+Component Name
+
+Type(Class)
+
+Methods
+
+Responsibilities
+
+Find the house of the names in the HashSet
+
+ClassHouseFormation
+
+public HashSet<String> formTeam()
+
+This method is used to find the house of the student names in the HashSet.
+
+Names that start with letters A - H belong to house "RED".
+
+Names that start with letters I - P belong to house "BLUE".
+
+Names that start with letters Q - Z belong to house "GREEN".
+
+(House name is case sensitive)
+
+Append the student name and the house name.
+
+Eg: If name is Alan and house is RED, the appended string should be Alan:RED.
+
+Store the appended string in another HashSet and return the same.
+
+
+In the UserInterface class, call the above methods and display the output as given in the sample input/output.
+
+Note:
+
+The number of students should be greater than 0. Display "Invalid input" if this condition fails.
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+
+Ensure to follow the object-oriented specifications provided in the question.
+
+Ensure to provide the names for classes, attributes, and methods as specified in the question.
+
+Adhere to the code template, if provided.
+
+Please don't use System.exit(0) to terminate the program.
+
+Sample Input / Output 1:
+
+Enter the number of students
+
+4
+
+Enter the details
+
+101:Daniel
+
+102:John
+
+103:Michael
+
+104:Steve
+
+Daniel:RED
+
+John:BLUE
+
+Steve:GREEN
+
+Michael:BLUE
+
+
+Sample Input / Output 2:
+
+Enter the number of students
+
+3
+
+Enter the details
+
+101:Alan
+
+102:Diana
+
+103:Elizabeth
+
+Alan:RED
+
+Diana:RED
+
+Elizabeth:RED
+
+
+Sample Input / Output 3:
+
+Enter the number of students
+
+-1
+
+Invalid input
+

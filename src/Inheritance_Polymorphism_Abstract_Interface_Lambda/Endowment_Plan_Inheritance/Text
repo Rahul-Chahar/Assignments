@@ -1,0 +1,362 @@
+Mother Teresa Endowment is one of the famous endowments in the city. In their last board meeting, board members have decided to automate their holder details for improvement and better maintenance of records
+
+You, being their software consultant, have been approached to develop software to implement the functionality of generating the endowment amount based on the endowment type.
+
+Requirement 1: Calculation of Endowment amount
+
+The application needs to calculate the endowment amount to be paid for the holder according to the endowment type
+
+Component Specification: Endowment
+
+Type(Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+Endowment
+
+String endowmentId
+
+String holderName
+
+String endowmentType
+
+String registrationDate
+
+Include the getter and setter method for all the attributes.
+
+Include a public parameterized constructor of four arguments in the following order -endowmentId, holderName, endowmentType, registrationDate to initialize the values for the Endowment object
+
+Endowment
+
+
+
+public abstract double calculateEndowment()
+
+
+
+Note:The attributes of the Endowment class should be protected and the methods should be public
+
+Component Specification: EducationalEndowment (Needs to be a child of the Endowment class)
+
+Component Name
+
+Type (Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EducationalEndowment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String educationalInstitution
+
+String educationalDivision
+
+Include the getter and setter method for all the attributes.
+
+Include a public   parameterized constructor of six arguments in the following order - endowmentId, holderName, endowmentType, registrationDate, educationalInstitution, educationalDivision to initialize the values for the EducationalEndowment object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Calculation of the Endowment amount
+
+
+
+EducationalEndowment
+
+
+
+
+
+public double calculateEndowment()
+
+
+
+This method should calculate the endowment amount to be paid for the holder based on the educationalDivision and return the calculated endowment amount
+
+
+
+If the educationalDivision is "School" then the
+
+Endowment amount should be 30000
+
+
+
+If the educationalDivision is "UnderGraduate" then the
+
+Endowment amount should be 60000
+
+
+
+If the educationalDivision is "PostGraduate" then the
+
+Endowment amount should be 90000
+
+
+
+Note: educationalDivision is caseinsensitive
+
+
+
+Note: The methods and the constructor should be public, and the attributes of the class should be private
+
+
+
+Component Specification: HealthEndowment (Needs to be a child of the Endowment class)
+
+Component Name
+
+Type (Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HealthEndowment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String healthCareCenter
+
+int holderAge
+
+Include the getter and setter method for all the attributes.
+
+Include a public parameterized constructor of six arguments in the following order - endowmentId, holderName, endowmentType, registrationDate, healthCareCenter, holderAge to initialize the values for the HealthEndowment object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Calculation of the Endowment amount
+
+
+
+HealthEndowment
+
+
+
+
+
+public double calculateEndowment()
+
+
+
+This method should calculate the endowment amount to be paid for the holder based on the holderAge and return the calculated endowment amount
+
+
+
+If the holderAge is less than or equal to 30 then the Endowment amount shoud be 120000
+
+
+
+If the holderAge is greater than 30 and  less than 60 then the Endowment amount should be 200000
+
+
+
+If the holderAge is greater than or equal to 60 then the Endowment amount should be 500000
+
+
+
+Note:The attributes of HealthEndowment class should be private and methods as public
+
+
+
+Use a public class UserInterface with the main method to test the application.  In the main method get the endowment holder details as shown in the sample input.
+
+Get the endowment type from the user.
+
+Note: Endowment type is case insensitive
+
+If the endowment type is educational, then create an object for the EducationalEndowment and invoke the calculateEndowment(), and display the returned amount as output (refer to sample output)
+
+If the endowment type is health, then create an object for the HealthEndowment and invoke the calculateEndowment(), and display the returned amount as output (refer to sample output)
+
+If the endowment type is invalid then print "<endowment type> is an invalid endowment type" and terminate the program.
+
+Note:
+
+Use System.out.printf("%.2f", endowmentamount).
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+Ensure to follow the object-oriented specifications provided in the question.
+Ensure to provide the names for classes, attributes and methods as specified in the question.
+Adhere to the code template, if provided.
+Please do not use System.exit(0) to terminate the program.
+Sample Input/Output 1:
+
+Enter Endowment Id
+
+EID101
+
+Enter Holder Name
+
+Babu
+
+Enter Endowment Type
+
+Educational
+
+Enter Registration Date
+
+28/5/2021
+
+Enter Educational Institution
+
+AMC
+
+Enter Educational Division
+
+undergraduate
+
+Endowment Amount 60000.00
+
+
+
+Sample Input/Output 2:
+
+Enter Endowment Id
+
+EID205
+
+Enter Holder Name
+
+Ezhil
+
+Enter Endowment Type
+
+health
+
+Enter Registration Date
+
+10/4/2021
+
+Enter Health Care Center
+
+Queens
+
+Enter Holder Age
+
+40
+
+Endowment Amount 200000.00
+
+
+
+Sample Input/Output 3:
+
+Enter Endowment Id
+
+EID205
+
+Enter Holder Name
+
+Ezhil
+
+Enter Endowment Type
+
+Grocery
+
+Grocery is an invalid endowment type
+

@@ -1,0 +1,318 @@
+KIT Institutions have opened admissions for freshers. So they decided to automate their server to calculate the college fee based on the student's category (Hosteller or Dayscholar). As an initiative, the institute wants the system to store the student details and help them to generate the total college fee.
+
+You as their software consultant have been approached to develop software to implement the functionality of generating the total college fee based on the category.
+
+Requirement 1:To calculate the Total Fee
+
+The application needs to calculate the total fee to be paid by the student according to the category
+
+Component Specification: Student (Abstract Class)
+
+Type(Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+Student
+
+int studentId
+
+String studentName
+
+String department
+
+String gender
+
+String category
+
+double collegeFee
+
+Include the getters and setters method for all the attributes.
+
+Include a public parameterized constructor of six arguments in the following order - studentId,studentName,department,gender,category,collegeFee to initialize the values for the Student object
+
+Student
+
+
+
+public abstract double calculateTotalFee()
+
+
+
+Note:The attributes of the Student class should be protected and the methods should be public
+
+
+
+Component Specification: Hosteller (Needs to be a child of the Student class)
+
+Component Name
+
+Type (Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+
+
+
+
+Hosteller
+
+
+
+
+
+int roomNumber
+
+char blockName
+
+String roomType
+
+Include the getters and setters method for all the attributes.
+
+Include a public parametrized constructor of nine arguments in the following order - studentId,studentName,department,gender,category,collegeFee, roomNumber, blockName, roomType to initialize the values for the Hosteller object
+
+
+
+
+
+
+
+
+
+
+
+Calculate the Total Fee
+
+
+
+Hosteller
+
+
+
+
+
+public double calculateTotalFee()
+
+
+
+This method should calculate the total fee to be paid by the student based on the blockName and roomType and return the calculated amount
+
+If the blockName is A then the hostelFee should be Rs 60000 and if the roomType is AC then the fee should be Rs 8000
+
+If the blockName is B then the hostelFee should be Rs 50000 and if the roomType is AC then the fee should be Rs 5000
+
+If the blockName is C then the hostelFee should be Rs 40000 and if the roomType is AC then the fee should be Rs 2500
+
+Hostel fee is common for both AC and Non - AC category
+
+For an AC room, the total amount will be collegeFee+hostelFee+roomTypeAmount
+
+For a Non-AC room, the  total amount will be collegeFee+hostelFee
+
+Note: roomType is case sensitive
+
+blockName is case sensitive
+
+ Note:The attributes of the Hosteller class should be private and methods should be public
+
+Example:
+
+If the collegeFee = 70000, blockName = C, roomType = AC, then the total amount will be:
+
+Total Amount    = collegeFee + blockName + roomType
+
+                                = 70000 + 40000 + 2500
+
+                                = 112500.0
+
+Component Specification: DayScholar(Needs to be a child of Student class)
+
+Component Name
+
+Type (Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+
+
+
+
+
+
+DayScholar
+
+
+
+
+
+
+
+int busNumber
+
+float distance
+
+Include the getters and setters method for all the attributes.
+
+Include a parametrized constructor of eight arguments in the following order - studentId,studentName,department,gender,category,collegeFee, busNumber,distance to intialize the values for the DayScholar object.
+
+
+
+
+
+
+
+
+
+
+
+Calculate the Total Fee
+
+
+
+DayScholar
+
+
+
+
+
+public double calculateTotalFee()
+
+
+
+This method should calculate the total fee to be paid by the student based on the distance and return the calculated amount
+
+
+
+If the distance is greater than 30 and less than or equal to 40 the busFee should be Rs 28000
+
+
+
+If the distance is greater than 20 and less than or equal to 30 the busFee should be Rs 20000
+
+
+
+If the distance is greater than 10 and less than or equal to 20 the busFee should be Rs 12000
+
+
+
+If the distance is less than or equal to 10 the busFee should be Rs 6000
+
+
+
+Note:The attributes of the DayScholar class should be private and methods should be public
+
+Example:
+
+If collegeFee = 60000, distance = 15, then the total amount will be:
+
+Total Amount    = collegeFee + distance
+
+                                = 60000 + 12000
+
+                                = 72000.0
+Use a public class UserInterface with the main method to test the application.  In the main method get the student details as shown in the sample input .
+
+Get the category from the user.
+
+Note: Category is case sensitive
+
+If the student is a Hosteller then create an object for the Hosteller and invoke the calculateTotalFee(), and display the returned amount as output(refer sample output).
+
+If the student is a DayScholar then create an object for the DayScholar and invoke the calculateTotalFee(), and display the returned amount as output(refer sample output).
+
+Note:
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+Ensure to follow the object oriented specifications provided in the question.
+Ensure to provide the names for classes, attributes and methods as specified in the question.
+Adhere to the code template, if provided.
+Please do not use System.exit(0) to terminate the program.
+Sample Input/Output 1
+
+Enter Student Id
+
+45
+
+Enter Student name
+
+Arun
+
+Enter Department name
+
+ECE
+
+Enter gender
+
+Male
+
+Enter category
+
+DayScholar
+
+Enter College fee
+
+70000
+
+Enter Bus number
+
+7
+
+Enter the distance
+
+19
+
+Total College fee is 82000.0
+
+
+
+Sample Input/Output 2
+
+Enter Student Id
+
+102
+
+Enter Student name
+
+Geetha
+
+Enter Department name
+
+CSE
+
+Enter gender
+
+Female
+
+Enter category
+
+Hosteller
+
+Enter College fee
+
+80000
+
+Enter the room number
+
+8
+
+Enter the Block name
+
+B
+
+Enter the room type
+
+AC
+
+Total College fee is 135000.0
+

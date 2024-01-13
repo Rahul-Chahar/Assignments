@@ -1,0 +1,200 @@
+Kannan Departmental Store has decided to open its online shopping portal. By automating they can easily enter the customer details, award bonus points and calculate the delivery charge as well.
+
+You as their software consultant have been approached to develop software to implement the functionality of generating the bonus points and calculating the delivery charges.
+
+Component Specification: CustomerDetails
+
+Type(Class)
+
+Attributes
+
+Methods
+
+Responsibilities
+
+CustomerDetails
+
+String customerName
+
+String phoneNumber
+
+String streetName
+
+double billAmount
+
+int distance
+
+Include the getter and setter methods for all the attributes.
+
+Include a public parametrized constructor of five arguments in the following order - customerName, phoneNumber, streetName, billAmount, distance to intialize the values for the CustomerDetails object
+
+Note:The attributes of the CustomerDetails class should be private and the methods should be public.
+
+Write a public interface BonusPoints with an abstract method "double calculateBonusPoints()".
+
+Write a public interface DoorDelivery with an abstract method "double deliveryCharge()".
+
+The above class CustomerDetails should implement the Interfaces BonusPoints and DoorDelivery.
+
+Requirement 1: To calculate the Bonus Points
+
+The application needs to calculate the bonus points to be awarded to the customer based on the bill amount.
+
+Component Specification: CustomerDetails
+
+Component Name
+
+Type (Class)
+
+Methods
+
+Responsibilities
+
+Calculating bonus points for the customer
+
+CustomerDetails
+
+public double calculateBonusPoints()
+
+This method should calculate the bonus points to be awarded to the customer based on the bill amount and return the bonus points
+
+If the billAmount is greater than or equal to 250, the customer is eligible to get bonus points
+
+So the bonus points will be calculated as billAmount/10
+
+If the billAmount is less than 250 return 0
+
+
+
+Example:
+
+If billAmount = 480, then the Bonus Points will be:
+
+Bonus Points   = billAmount / 10
+
+                        = 480 / 10
+
+                        = 48.0
+
+
+
+Requirement 2: To calculate the Delivery charges
+
+The application needs to calculate the delivery charges  to be paid by the customer according to the distance
+
+Component Specification: CustomerDetails
+
+Component Name
+
+Type (Class)
+
+Methods
+
+Responsibilities
+
+Calculating delivery charges for the customer
+
+CustomerDetails
+
+public double deliveryCharge()
+
+This method should calculate the delivery charges to be paid by the customer based on the distance and return the delivery charges.
+
+If the distance is greater than or equal to 25, the delivery charges should be Rs 8/km.
+
+If the distance is greater than or equal to 15 and less than 25, the delivery charges should be Rs 5/ km
+
+If the distance is less than 15 km, the delivery charges should be Rs 2/ km
+
+So the delivery charges should be calculated as distance*delivery charges per km
+
+
+
+Example:
+
+If distance = 10, then the Delivery  charges will be:
+
+Delivery charges = distance * delivery charges per km
+
+                          = 10 * 2
+
+                          = 20.0
+
+Use a public class UserInterface with the main method to test the application.  In the main method get the customer details as shown in the sample input .
+
+Create an object for CustomerDetails and invoke the calculateBonusPoints() method from the CustomerDetails class to find the bonus points, and display the returned points as output(refer sample output).
+
+Invoke the deliveryCharge() method from the CustomerDetails class to find the delivery charges, and display the returned amount as output(refer sample output).
+
+Note:
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+Ensure to follow the object oriented specifications provided in the question.
+Ensure to provide the names for classes, attributes and methods as specified in the question.
+Adhere to the code template, if provided.
+Please do not use System.exit(0) to terminate the program.
+Sample Input/Ouput 1
+
+Enter the customer name
+
+Mikkel
+
+Enter the phone number
+
+9513578462
+
+Enter the street name
+
+Winden street
+
+Enter the bill amount
+
+670
+
+Enter the distance
+
+18
+
+Customer name: Mikkel
+
+Phone number: 9513578462
+
+Street name: Winden street
+
+Bonus points: 67.0
+
+Delivery charge: 90.0
+
+.
+
+Sample Input/Ouput 2
+
+Enter the customer name
+
+Hannah
+
+Enter the phone number
+
+9784561230
+
+Enter the street name
+
+Newton street
+
+Enter the bill amount
+
+150
+
+Enter the distance
+
+10
+
+Customer name: Hannah
+
+Phone number: 9784561230
+
+Street name: Newton street
+
+Bonus points: 0.0
+
+Delivery charge: 20.0

@@ -1,0 +1,386 @@
+ Vivek Furniture Store is one of the most famous furniture stores in the city. They want to automate their customer details and the total price. As an initiative, they want the system to store the customer details and help them generate the total price.
+
+ You, being their software consultant, have been approached to develop software to implement the functionality of generating the total price based on the bero type.
+
+
+
+ Component Specification: CustomerDetails
+
+ Type(Class)
+
+ Attributes
+
+ Methods
+
+ Responsibilities
+
+ CustomerDetails
+
+ String customerName
+
+ long phoneNumber
+
+ String address
+
+ Include the getter and setter method for all the attributes.
+
+ Include a public parametrized constructor of three arguments in the following order - customerName, phoneNumber and address to initialize the values for the CustomerDetails object
+
+ Note:The attributes of the CustomerDetails class should be private and the methods should be public
+
+ Requirements 1:To calculate Total Price
+
+ The application needs to calculate the total price to be paid by the customer according to the beroType
+
+ Component Specification: Bero (Abstract Class)
+
+ Type(Class)
+
+ Attributes
+
+ Methods
+
+ Responsibilities
+
+ Bero
+
+ String beroType
+
+ String beroColour
+
+ double price
+
+ Include the getter and setter method for all the attributes.
+
+ Include a parametrized constructor of two arguments in the following order - beroType, beroColourto intialize the values for the Bero object
+
+ Bero
+
+
+
+ public abstract void calculatePrice()
+
+
+
+ Note:The attributes of the Bero class should be protected and the methods should be public
+
+
+
+ Component Specification: SteelBero (Needs to be a child of the Bero class)
+
+ Component Name
+
+ Type (Class)
+
+ Attributes
+
+ Methods
+
+ Responsibilities
+
+ Calculating the Total Price
+
+ SteelBero
+
+
+
+
+
+
+
+
+
+ int beroHeight
+
+ Include the getter and setter method for all the attributes.
+
+ Include a public parametrized constructor of three arguments in the following order - beroType, beroColour, beroHeight to intialize the values for the SteelBero object
+
+
+
+
+
+
+
+
+
+
+
+ Calculating the Total Price
+
+
+
+ SteelBero
+
+
+
+
+
+ public void calculatePrice()
+
+
+
+ This method should calculate the total price to be paid by the customer based on the beroHeight and setPrice of the bero
+
+
+
+ If the beroHeight is 3 feet, then the price should be Rs 5000
+
+
+
+ If the beroHeight is 5 feet, then the price should be Rs 8000
+
+
+
+ If the beroHeight is 7 feet, then the price should be Rs 10000
+
+
+
+ Note: The attributes of the SteelBero class should be private and methods as public
+
+
+
+ Component Specification: WoodenBero (Needs to be a child of the Bero class)
+
+ Component Name
+
+ Type (Class)
+
+ Attributes
+
+ Methods
+
+ Responsibilities
+
+ Calculating the Total Price
+
+
+
+
+
+
+
+
+
+ WoodenBero
+
+
+
+
+
+
+
+
+
+
+
+ String woodType
+
+ Include the getter and setter method for all the attributes.
+
+ Include a public parametrized constructor of three arguments in the following order - beroType, beroColour, woodType to intialize the values for the WoodenBero object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Calculating the Total Price
+
+
+
+ WoodenBero
+
+
+
+
+
+ public void calculatePrice()
+
+
+
+ This method should calculate the total price to be paid by the customer based on the woodType and the setPrice of the bero
+
+
+
+ If the woodType is "Ply Wood" then the price should be Rs 15000
+
+
+
+ If the woodType is "Teak Wood" then the price should be Rs 12000
+
+
+
+ If the woodType is "Engineered Wood" then the price should be Rs 10000
+
+
+
+ Note : woodType is case sensitive
+
+
+
+ Note: The attributes of the WoodenClass class should be private and methods as public
+
+
+
+ Requirements 2:  To calculate the discount on the Bero
+
+ The application needs to calculate the discount on the beroType
+
+ Component Specification: Discount
+
+ Component Name
+
+ Type (Class)
+
+ Methods
+
+ Responsibilities
+
+ Calculating the discount on the bero
+
+ Discount
+
+ public double calculateDiscount(Bero bObj)
+
+ This method is used to calculate the discount for the bero objects and return the discount amount
+
+ If the object is SteelBero then the discount should be 10%
+
+ If the object is WoodenBero then the discount should be 15%
+
+
+
+ Example:
+
+ If the object is SteelBero, price = 5000, then the discount will be:
+
+ Discount = (price * 10) /100
+
+                = (5000 * 10) / 100
+
+ Discount = 500
+
+ Use a public class UserInterface with the main method to test the application.  In the main method get the customer details as shown in the sample input .
+
+ Get the bero type from the user.
+
+ Note: bero type is case sensitive
+
+ If the bero type is "Steel Bero" then create an object for the SteelBero and invoke the calculatePrice(), and display the returned amount as output (refer sample output)
+
+ If the bero type is "Wooden Bero" then create an object for the WoodenBero and invoke the calculatePrice(), and display the returned amount as output (refer sample output)
+
+ If the bero type is invalid then print "<bero type> is an invalid bero type" and terminate the program.
+
+ Example :
+
+ Total price calculation
+
+ If price = 5000, discount = 500, then the total price will be:
+
+ Total price = price - discount
+
+                   = 5000 - 500
+
+                   = 4500.00
+
+ The total price should end with two digits after the decimal points
+
+ Use System.out.printf("%.2f", totalprice).
+
+ Note:
+
+ In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+ Ensure to follow the object-oriented specifications provided in the question.
+ Ensure to provide the names for classes, attributes and methods as specified in the question.
+ Adhere to the code template, if provided.
+ Please do not use System.exit(0) to terminate the program.
+ Sample Input/Output1
+
+ Enter Customer Name
+
+ Barath
+
+ Enter Phone Number
+
+ 9876543210
+
+ Enter address
+
+ North Street
+
+ Enter Bero Type
+
+ Wooden Bero
+
+ Enter Bero Colour
+
+ Brown
+
+ Enter Wood Type
+
+ Ply Wood
+
+ Amount needs to be paid 12750.00
+
+
+
+ Sample Input/Output 2
+
+ Enter Customer Name
+
+ Guru
+
+ Enter Phone Number
+
+ 7894561230
+
+ Enter address
+
+ South Street
+
+ Enter Bero Type
+
+ Steel Bero
+
+ Enter Bero Colour
+
+ Blue
+
+ Enter Bero Height
+
+ 7
+
+ Amount needs to be paid 9000.00
+
+
+
+ Sample Input/Output 3
+
+ Enter Customer Name
+
+ Guru
+
+ Enter Phone Number
+
+ 7894561230
+
+ Enter address
+
+ South Street
+
+ Enter Bero Type
+
+ Cupboard
+
+ Cupboard is an invalid bero type

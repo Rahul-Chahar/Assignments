@@ -1,0 +1,192 @@
+MobiHub is a famous Mobile Showroom in the city, planning for its weekend sale. The management wants to give a discount to their Customers according to the various Mobile series and its specifications. Calculating discounts for the customers manually is pretty difficult. The management wants to automate the calculation of discounts according to the mobile specification.
+
+You, being their software consultant have been approached by them to develop an application for the same.  You need to implement a Java program to calculate the discount based on the mobile specifications.
+
+Component Specification: SmartPhone (Interface)
+
+Type(Interface)
+
+
+
+Attributes
+
+Methods
+
+Responsibilities
+
+SmartPhone
+
+
+
+
+
+String os()
+
+int version()
+
+The methods are used to create a user-defined annotation @SmartPhone holding the values of OS and Version
+
+
+
+Note:
+
+Interface and the methods should be the default.
+
+Build-in annotations like Target and Retention are used in this interface.
+
+Component Specification: IphoneSeries (Model Class)
+
+Type(Class)
+
+
+
+Attributes
+
+Methods
+
+Responsibilities
+
+IphoneSeries
+
+String model
+
+double display
+
+double price
+
+
+
+
+
+Getter and setter methods for all the attributes and three argument constructors are included in the code skeleton.
+
+
+
+Note:
+
+The class and methods should be declared public and all the attributes should be declared private.
+
+This Class should apply the SmartPhone annotation with the values OS - IOS and Version - 6.
+
+Component Specification: IphoneSeries (Model Class)
+
+Type(Class)
+
+
+
+Attributes
+
+Methods
+
+Responsibilities
+
+IphoneSeries
+
+
+
+
+
+public double calculateDiscount()
+
+This method calculates the discount for the iPhone series according to its specification.
+
+
+
+Example :
+
+Amount = (price * discount percentage) - price
+
+The discount percentage depends on the iPhone series and its display size.
+
+IPhone series
+
+Display size
+
+Discount percentage
+
+iPhoneSE
+
+5.0-6.0
+
+6.1-7.0
+
+5
+
+10
+
+iPhone13ProMax
+
+5.0-6.0
+
+6.1-7.0
+
+6
+
+9
+
+iPhone13Pro
+
+5.0-6.0
+
+6.1-7.0
+
+4
+
+11
+
+iPhone13
+
+5.0-6.0
+
+6.1-7.0
+
+8
+
+12
+
+
+
+You are provided with the UserInterface class, which displays the details of the iPhone and the calculated discount according to the iPhone series and its specification.
+
+Note:
+
+Ensure to follow the object-oriented specifications provided in the question description.
+
+Ensure to provide the names for classes, attributes, and methods as specified in the question description.
+
+Adhere to the code template, if provided.
+
+Please ignore the warning message that appears during compilation in the compilation window.
+
+Please do not use System.exit(0) to terminate the program.
+
+
+
+Sample Input / Output 1:
+
+Enter Model
+
+iPhone13
+
+Enter display (in inches)
+
+6.0
+
+Enter Price
+
+49000
+
+iPhone Details
+
+Model : iPhone13
+
+Display in (inches): 6.0
+
+Price : 49000.0
+
+Amount to be paid : 45080.0
+
+OS : IOS
+
+Version : 6
+
